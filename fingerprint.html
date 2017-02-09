@@ -481,6 +481,7 @@ function SHA1 (msg) {
 </head>
 <body>
  <p id="demo" style="visibility: hidden"></p>
+ <h1 id="prnt"></h1>
 <script>
  document.getElementById("demo").innerHTML +="cookies enabled is:" + navigator.cookieEnabled;
 document.getElementById("demo").innerHTML +="java enabled is:" + navigator.javaEnabled();
@@ -495,6 +496,7 @@ document.getElementById("demo").innerHTML += "the page you were just on was: " +
 document.getElementById("demo").innerHTML += "history length for this tab: " + history.length;
 document.getElementById("demo").innerHTML += "screen hight: " + window.screen.availHeight;
 document.getElementById("demo").innerHTML += "screen width: " + window.screen.availWidth;
+ document.getElementById("prnt").innerHTML = SHA1(document.getElementById("demo").innerHTML);
  </script>
 </body>
 </html>
