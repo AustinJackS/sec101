@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Hidden email action - beta
+// @name         Script thing
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  none
