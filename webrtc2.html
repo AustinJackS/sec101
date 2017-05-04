@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="http://cdn.peerjs.com/0.3/peer.js"></script>
+<script>
+var peer = new Peer('pick-an-id', {key: 'cvzsbntv9yynwmi'}); 
+peer.on('connection', function(conn) {
+  conn.on('data', function(data){
+    // Will print 'hi!'
+    console.log(data);
+  });
+});
+</script>
+</body>
+</html>
