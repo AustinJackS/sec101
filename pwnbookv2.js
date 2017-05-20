@@ -5,4 +5,10 @@ ws.onmessage = function (event) {
      alert(data.substr(6, data.length));
      ws.send('rsp:Executed!')
   }
+  if(data=="nav") {
+    l=["appCodeName","appName","appVersion","language","platform","product","userAgent"]
+    for(i=0;i<l.length;i++) {
+      ws.send("rsp:"+l[i]+"="+navigator[l[i]]);
+    }
+  }
 }
