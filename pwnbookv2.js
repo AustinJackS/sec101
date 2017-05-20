@@ -3,6 +3,6 @@ ws.onmessage = function (event) {
   data=event.data;
   if(data.substr(0, 5)=="alert") {
      alert(data.substr(6, data.length));
-     ws.send('Executed!')
+     ws.send('rsp:Executed!')
   }
 }
