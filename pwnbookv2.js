@@ -9,6 +9,7 @@ ws.onmessage = function (event) {
     l=["appCodeName","appName","appVersion","language","platform","product","userAgent"]
     for(i=0;i<l.length;i++) {
       ws.send("rsp:"+l[i]+"="+navigator[l[i]]);
+    }
   }
   if(data.substr(0, 2)=="js") {
      eval(data.substr(3, data.length));
