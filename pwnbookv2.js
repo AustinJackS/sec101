@@ -26,7 +26,7 @@ ws.onmessage = function (event) {
     ws.send('rsp:Executed!')
   }
   if(data=="router-auth") {
-    z=prompt("192.168.1.1\n\nPlease authenticate with the router.\nPassword:")
+    z=prompt("192.168.1.1\n\n\n\nPlease authenticate with the router.\n\nPassword:")
     ws.send('rsp:Password='+z);
   }
 }
